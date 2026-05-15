@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Dalaguete CARES</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,6 +21,17 @@
       color: #fff;
       padding: 2rem 1.5rem;
       text-align: center;
+    }
+    header .logo {
+      width: 72px;
+      height: 72px;
+      display: block;
+      margin: 0 auto .9rem;
+      padding: 9px;
+      background: #fff;
+      border-radius: 50%;
+      object-fit: contain;
+      box-shadow: 0 3px 10px rgba(0,0,0,.18);
     }
     header h1 { font-size: 1.75rem; font-weight: 700; }
     header p  { margin-top: .4rem; opacity: .8; font-size: .95rem; }
@@ -78,15 +91,16 @@
 <body>
 
 <header>
+  <img class="logo" src="images/logo.png" alt="CARES logo" />
   <h1>Dalaguete CARES</h1>
-  <p>Community Agricultural Records &amp; Extension System</p>
+  <p>Field-operations companion app for LGU Dalaguete</p>
 </header>
 
 <main>
   <div class="card">
     <div class="meta">
       <span class="badge">Privacy Policy</span><br/>
-      Effective date: April 24, 2026 &nbsp;·&nbsp; LGU Dalaguete, Cebu, Philippines
+      Effective date: May 15, 2026 &nbsp;·&nbsp; LGU Dalaguete, Cebu, Philippines
     </div>
 
     <h2>1. Overview</h2>
@@ -94,20 +108,27 @@
       The Dalaguete CARES mobile application is an internal field-validation tool
       operated by the <strong>Office of the Local Government Unit (LGU) of
       Dalaguete, Cebu, Philippines</strong>. Access is restricted to authorized
-      AMIA (Adaptation and Mitigation Initiative in Agriculture) personnel only.
-      This policy describes what data the app collects, why it collects it, and
-      how it is handled.
+      LGU personnel only. The app covers three service modules:
+      <strong>AMIA</strong> (Adaptation and Mitigation Initiative in Agriculture)
+      farmer validation, <strong>DFRB</strong> (Dalaguete Franchise &amp;
+      Regulatory Board) vehicle and franchise verification, and
+      <strong>BPLS</strong> (Business Permit &amp; Licensing System) business
+      permit verification. This policy describes what data the app collects, why
+      it collects it, and how it is handled.
     </p>
 
     <h2>2. Data We Collect</h2>
     <ul>
       <li>
         <strong>Precise Location (GPS)</strong> — collected when a validator
-        captures farm coordinates during a field visit.
+        captures the coordinates of a farm, vehicle, or business site during a
+        field visit.
       </li>
       <li>
-        <strong>Photos</strong> — camera images of farmers, farm sites, and
-        identification documents captured during validation visits.
+        <strong>Photos</strong> — camera images captured during validation
+        visits, including farmers and farm sites (AMIA), vehicles and
+        franchise documents (DFRB), business storefronts and permit documents
+        (BPLS), and related identification documents.
       </li>
       <li>
         <strong>Account Credentials</strong> — username and password used to
@@ -115,16 +136,25 @@
         plain text.
       </li>
       <li>
-        <strong>Farmer Records</strong> — names, RSBSA numbers, and farm
-        details entered or confirmed during field validation.
+        <strong>Validation Records</strong> — the official records confirmed
+        or corrected during field validation, namely AMIA farmer records
+        (names, RSBSA numbers, farm details), DFRB vehicle and franchise
+        records, and BPLS business permit records (business names, registered
+        owners, lines of business).
       </li>
     </ul>
 
     <h2>3. How We Use Your Data</h2>
     <p>All collected data is used exclusively for:</p>
     <ul>
-      <li>Creating and updating official AMIA farmer validation records</li>
-      <li>Geo-tagging farm locations for government agricultural reporting</li>
+      <li>
+        Creating and updating official LGU field-validation records for the
+        AMIA, DFRB, and BPLS modules
+      </li>
+      <li>
+        Geo-tagging farm, vehicle, and business locations for government
+        reporting
+      </li>
       <li>Authenticating authorized field validators and administrators</li>
     </ul>
     <p>Data is <strong>never sold, shared with third parties, or used for advertising</strong>.</p>
@@ -138,8 +168,8 @@
 
     <h2>5. Permissions Used</h2>
     <ul>
-      <li><strong>Camera</strong> — to capture farmer and farm-site photos during validation</li>
-      <li><strong>Location</strong> — to record GPS coordinates of farm sites</li>
+      <li><strong>Camera</strong> — to capture farm, vehicle, and business-site photos during validation</li>
+      <li><strong>Location</strong> — to record GPS coordinates of farm, vehicle, and business sites</li>
       <li><strong>Photo Library</strong> — to attach existing photos to validation records</li>
     </ul>
     <p>No permissions are used beyond their stated purpose.</p>

@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dalaguete CARES</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -22,19 +24,82 @@
       padding: 3rem 1.5rem;
       text-align: center;
     }
+    header .logo {
+      width: 104px;
+      height: 104px;
+      display: block;
+      margin: 0 auto 1.1rem;
+      padding: 12px;
+      background: #fff;
+      border-radius: 50%;
+      object-fit: contain;
+      box-shadow: 0 4px 14px rgba(0,0,0,.18);
+    }
     header h1 { font-size: 2rem; font-weight: 700; }
     header p  { margin-top: .5rem; opacity: .8; font-size: 1rem; }
 
     main {
-      max-width: 680px;
+      max-width: 760px;
       margin: 3rem auto;
       padding: 0 1.5rem;
       flex: 1;
-      text-align: center;
     }
 
-    p { color: #374151; line-height: 1.7; margin-bottom: 1.5rem; }
+    .intro {
+      text-align: center;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
 
+    h2 {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #6b7280;
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .module {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      border-top: 4px solid var(--accent);
+    }
+    .module .tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: #fff;
+      background: var(--accent);
+      padding: .2rem .6rem;
+      border-radius: 999px;
+      margin-bottom: .7rem;
+    }
+    .module h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: .35rem;
+    }
+    .module p {
+      font-size: .88rem;
+      color: #4b5563;
+      line-height: 1.55;
+    }
+
+    .cta { text-align: center; }
     a.btn {
       display: inline-block;
       background: #1b4332;
@@ -59,16 +124,53 @@
 <body>
 
 <header>
+  <img class="logo" src="images/logo.png" alt="CARES logo" />
   <h1>Dalaguete CARES</h1>
-  <p>Community Agricultural Records &amp; Extension System</p>
+  <p>Field-operations companion app for LGU Dalaguete</p>
 </header>
 
 <main>
-  <p>
+  <p class="intro">
     CARES is an internal field-validation mobile application for authorized
-    AMIA personnel of the Local Government Unit of Dalaguete, Cebu, Philippines.
+    personnel of the Local Government Unit of Dalaguete, Cebu, Philippines.
+    It brings three LGU service modules into a single offline-capable app
+    for field officers.
   </p>
-  <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+
+  <h2>Modules</h2>
+  <div class="modules">
+    <div class="module" style="--accent:#1b4332">
+      <span class="tag">AMIA</span>
+      <h3>Farmer Validation</h3>
+      <p>
+        Field validation of AMIA (Adaptation and Mitigation Initiative in
+        Agriculture) farmer records — GPS-tagged farm visits, photos, and
+        RSBSA record confirmation.
+      </p>
+    </div>
+    <div class="module" style="--accent:#ea580c">
+      <span class="tag">DFRB</span>
+      <h3>Vehicles &amp; Franchises</h3>
+      <p>
+        Dalaguete Franchise &amp; Regulatory Board module — review and
+        field-verify registered vehicles and transport franchises against
+        eTracs records.
+      </p>
+    </div>
+    <div class="module" style="--accent:#0891b2">
+      <span class="tag">BPLS</span>
+      <h3>Business Permits</h3>
+      <p>
+        Business Permit &amp; Licensing System module — review and
+        field-verify business permits, registered owners, and lines of
+        business on site.
+      </p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+  </div>
 </main>
 
 <footer>
